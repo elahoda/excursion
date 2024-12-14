@@ -33,6 +33,13 @@ h2 {
     font-size: 42px;   
 }
 
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
 
 .download {
     color: var(--text-color-aquamarine);
