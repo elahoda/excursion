@@ -82,7 +82,7 @@ h2 {
     font-family: var(--font-primary);
 }
 
-.download:hover {
+.download:hover, .download:active {
     color: var(--text-color-white);
     text-decoration: underline;
 }
