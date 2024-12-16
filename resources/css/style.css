@@ -111,10 +111,13 @@ main {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    gap: 20px;
+    
 }
 .guide-images img {
     width: 100%;
     height: auto;
+
 }
 
 /* Media queries */
