@@ -1,3 +1,53 @@
+/* Normalize.css-like reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--main-bg-color);
+  text-align: center;
+}
+
+body {
+  
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  margin: 0;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  margin: 0;
+}
+
+:focus {
+  outline: 2px solid blue;
+}
+
+
+
+/* Base styles */
 :root {
     --main-bg-color: black;
     --text-color-white: white;
@@ -6,18 +56,6 @@
     --font-primary: Veranda, sans-serif;      
 }
 
-/* Base styles */
-
-html {
-
-    background-color: var(--main-bg-color);
-    text-align: center;
-}
-body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
 
 /*  Typography */
 
@@ -49,11 +87,13 @@ h2 {
     text-decoration: underline;
 }
 
-footer p {
+footer  {
         color: var(--text-color-gray);
         text-align: right;
-        
+        padding: 20px 40px;
+              
 }
+
 /* image layout */
 
 main {
@@ -68,14 +108,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 .guide-images img {
     width: 100%;
     height: auto;
-    margin: 20px 0;
 }
 
 /* Media queries */
